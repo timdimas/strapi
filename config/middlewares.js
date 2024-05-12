@@ -17,6 +17,8 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
+      enabled: true,
+      headers: "*",
       origin: [
         "http://localhost:3000",
         "https://capitalcompass.gr",
@@ -24,6 +26,8 @@ module.exports = [
         "https://capitalcompass.netlify.app",
         "https://capitalcompass.vercel.app/",
         "https://capitalcompass.vercel.app",
+        "https://strapi-production-deb5.up.railway.app/",
+        "https://strapi-production-deb5.up.railway.app",
       ],
     },
   },
